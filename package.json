@@ -1,0 +1,35 @@
+{
+  "name": "@engineforce/aws-dynamodb-wrapper",
+  "version": "0.2.0",
+  "description": "Wrapper for DynamoDB",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && poi build",
+    "test": "yarn run test-unit",
+    "test-unit": "jest --testPathPattern \\.unit\\.test\\.",
+    "test-integration": "start-server-and-test start-dynamodb http://localhost:8001/shell test-integration-quick",
+    "test-integration-quick": "jest --testPathPattern \\.integration\\.test\\.",
+    "start-dynamodb": "sls dynamodb start"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.296.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@engineforce/build-config": "^0.0.1",
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "jest": "^23.5.0",
+    "mockdate": "^2.0.2",
+    "poi": "^10.2.10",
+    "regenerator-runtime": "^0.12.1",
+    "serverless": "^1.30.3",
+    "serverless-dynamodb-local": "^0.2.31",
+    "start-server-and-test": "^1.4.1",
+    "typescript": "^3.0.3"
+  }
+}
