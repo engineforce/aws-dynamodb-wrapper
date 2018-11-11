@@ -1,6 +1,6 @@
 {
   "name": "@engineforce/aws-dynamodb-wrapper",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Wrapper for DynamoDB",
   "main": "./dist/index.js",
   "license": "MIT",
